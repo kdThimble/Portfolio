@@ -1,0 +1,29 @@
+.para-link {
+    color: #8A2BE2;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.para-link:hover {
+    color: #563d7c;
+}
+
+.tags {
+    color: #cbc3e3
+}
+
+.para {
+    font-size: larger;
+
+    @media (max-width: 600px) {
+        .para {
+            width: 100vw;
+        }
+    }
+
+    @media (min-width: 601px) {
+        .para {
+            width: 50vw;
+        }
+    }
+}

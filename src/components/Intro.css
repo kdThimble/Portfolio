@@ -1,0 +1,214 @@
+.main-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 80px;
+
+    position: relative;
+}
+
+
+.sub-heading {
+    font-size: 22px;
+    color: #D6D5CB;
+    line-height: 24px;
+}
+
+.heading-container {
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+}
+
+.blast {
+    display: inline-block;
+}
+
+.blast:hover {
+    animation: animate 0.5s;
+    transition: all 0.3s ease-in-out;
+    /* transition: all 0.2s cubic-bezier(0.4, 0.91, 1, 1); */
+}
+
+.hover-red:hover {
+    color: #F16775;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes animate {
+    25% {
+        transform: scale(0.8, 1.3);
+    }
+
+    50% {
+        transform: scale(1.1. 0.8);
+    }
+
+    75% {
+        transform: scale(0.7, 1.2);
+    }
+
+}
+
+.text-animation {
+    width: 500px;
+    animation: typing 1.3s steps(20, end);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-section:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 20;
+}
+
+.home-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.home-section img#moon {
+    mix-blend-mode: screen;
+
+}
+
+.home-section img#mountains_front {
+    z-index: 10;
+}
+
+/* Let's go button */
+#btn-letsgo {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 20;
+    text-decoration: none;
+    transform: translateY(100px);
+    transition: 0.5s;
+}
+
+#btn-letsgo:hover {
+    background-color: #2b1055;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sub-heading {
+        font-size: 18px;
+    }
+
+    .text-animation {
+        width: 280px;
+    }
+
+    .home-section {
+        padding: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .sub-heading {
+        font-size: 18px;
+    }
+
+    .home-section {
+        padding: 30px;
+    }
+
+    .text-animation {
+        width: 260px;
+    }
+
+}
+
+.pad {
+    margin-top: 2rem;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.pad::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.pad:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.pad:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}

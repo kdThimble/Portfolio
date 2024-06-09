@@ -61,7 +61,7 @@ const ContactForm = () => {
           <div className="absolute inset-0 w-full h-full bg-slate-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center h-[40rem] mt-[-5rem] ">
+      <div className="flex flex-col items-center justify-center h-[40rem] mt-[-7rem] ">
         <p className="text-neutral-600 dark:text-neutral-200 text-base  mb-10">
           "Let's Connect and Create Something Amazing Together!"
         </p>

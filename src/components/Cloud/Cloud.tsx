@@ -35,17 +35,23 @@ const Cloud = () => {
 
   useEffect(() => {
     if (effectRan.current === false) {
-      var tagcloud = TagCloud(".Sphere", Texts, {
-        radius: 250,
-
-        maxSpeed: "normal",
-        initSpeed: "fast",
-        direction: 135,
-        keep: true,
-      });
+      const sphereElement = document.querySelector(".Sphere");
+      if (sphereElement) {
+        TagCloud([sphereElement], Texts, {
+          radius: 250,
+          maxSpeed: "normal",
+          initSpeed: "fast",
+          deceleration: 135,
+          keep: true,
+        });
+      }
     }
-    return () => (effectRan.current = true);
+    return () => {
+      effectRan.current = true;
+      // If you have any cleanup logic, place it here
+    };
   }, []);
+
 
   return (
     <div >

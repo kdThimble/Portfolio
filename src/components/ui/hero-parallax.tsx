@@ -108,7 +108,8 @@ export const Header = () => {
         Where Ideas Meet Execution: <br /> Unveiling My Portfolio.
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        Passionate about merging creativity with technology, I'm a Full Stack Web Dev dedicated to crafting digital solutions that leave a lasting
+        Passionate about merging creativity with technology, I'm a Full Stack
+        Web Dev dedicated to crafting digital solutions that leave a lasting
         impact. With a keen eye for detail and a drive for innovation, each
         project in my portfolio represents not just a task completed, but a
         journey of exploration and growth

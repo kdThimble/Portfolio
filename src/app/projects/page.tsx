@@ -3,63 +3,64 @@ import { LampContainer } from "../../components/ui/lamp";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 
-export const products = [
-  {
-    title: "Nike Store ",
-    link: "https://nikeshopease.netlify.app/",
-    thumbnail: "/assets/nike.png",
-  },
-  {
-    title: "Cine-View",
-    link: "https://cineview-app.netlify.app/",
-    thumbnail: "/assets/cineview.png",
-  },
-  {
-    title: "Musical Academy",
-    link: "https://musicalacademy.netlify.app/",
-    thumbnail: "/assets/musical.png",
-  },
-
-  {
-    title: "Hotel bhabha",
-    link: "https://hotel-bhabha.vercel.app/",
-    thumbnail: "/assets/hotelbhabha.png",
-  },
-  {
-    title: "ChefKart",
-    link: "https://thechefkart.com/",
-    thumbnail: "/assets/chefkart.png",
-  },
-
-  {
-    title: "Cine-View",
-    link: "https://cineview-app.netlify.app/",
-    thumbnail: "/assets/cineview.png",
-  },
-  {
-    title: "Musical Academy",
-    link: "https://musicalacademy.netlify.app/",
-    thumbnail: "/assets/musical.png",
-  },
-  {
-    title: "Nike Store ",
-    link: "https://nikeshopease.netlify.app/",
-    thumbnail: "/assets/nike.png",
-  },
-
-  {
-    title: "Hotel bhabha",
-    link: "https://hotel-bhabha.vercel.app/",
-    thumbnail: "/assets/hotelbhabha.png",
-  },
-  {
-    title: "ChefKart",
-    link: "https://thechefkart.com/",
-    thumbnail: "/assets/chefkart.png",
-  },
-];
+ 
 
 export default function Projects() {
+  const products = [
+    {
+      title: "Nike Store ",
+      link: "https://nikeshopease.netlify.app/",
+      thumbnail: "/assets/nike.png",
+    },
+    {
+      title: "Cine-View",
+      link: "https://cineview-app.netlify.app/",
+      thumbnail: "/assets/cineview.png",
+    },
+    {
+      title: "Musical Academy",
+      link: "https://musicalacademy.netlify.app/",
+      thumbnail: "/assets/musical.png",
+    },
+
+    {
+      title: "Hotel bhabha",
+      link: "https://hotel-bhabha.vercel.app/",
+      thumbnail: "/assets/hotelbhabha.png",
+    },
+    {
+      title: "ChefKart",
+      link: "https://thechefkart.com/",
+      thumbnail: "/assets/chefkart.png",
+    },
+
+    {
+      title: "Cine-View",
+      link: "https://cineview-app.netlify.app/",
+      thumbnail: "/assets/cineview.png",
+    },
+    {
+      title: "Musical Academy",
+      link: "https://musicalacademy.netlify.app/",
+      thumbnail: "/assets/musical.png",
+    },
+    {
+      title: "Nike Store ",
+      link: "https://nikeshopease.netlify.app/",
+      thumbnail: "/assets/nike.png",
+    },
+
+    {
+      title: "Hotel bhabha",
+      link: "https://hotel-bhabha.vercel.app/",
+      thumbnail: "/assets/hotelbhabha.png",
+    },
+    {
+      title: "ChefKart",
+      link: "https://thechefkart.com/",
+      thumbnail: "/assets/chefkart.png",
+    },
+  ];
   return (
     <div className="bg-slate-950 w-full h-full pb-3">
       <div className="h-[20rem] w-full bg-slate-950 flex flex-col items-center justify-center overflow-hidden rounded-md pt-4">

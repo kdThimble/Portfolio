@@ -3,6 +3,63 @@ import { Meteors } from "@/components/ui/meteors";
 import React from "react";
 
 const Page: React.FC = () => {
+  const Skills = [
+    {
+      title: "Frontend Development",
+      description:
+        "Mastery in building dynamic user interfaces and interactive web applications using modern frontend frameworks like React, Nextjs. Nodejs Proficient in creating reusable components, managing state, and optimizing performance.",
+      link: "https://stripe.com",
+    },
+    {
+      title: "Backend Development ",
+      description:
+        "Extensive experience in backend development using Node.js, Express, and Prisma frameworks. Skilled in building scalable, RESTful APIs, handling authentication, authorization, and data management with databases like MongoDB, PostgreSQL, and MySQL.",
+      link: "https://netflix.com",
+    },
+    {
+      title: "Database Management",
+      description:
+        "Strong understanding of database management systems including MongoDB, PostgreSQL, and MySQL. Proficient in designing schemas, optimizing queries, and ensuring data integrity for efficient data storage and retrieval.",
+      link: "https://google.com",
+    },
+    {
+      title: "RESTful API Development",
+      description:
+        "Expertise in designing and implementing RESTful APIs for seamless communication between frontend and backend systems. Skilled in defining endpoints, request handling, authentication mechanisms, and data validation to ensure secure and efficient data transfer.",
+      link: "https://meta.com",
+    },
+    {
+      title: "Responsive Design and Cross-Browser Compatibility",
+      description:
+        "Proficient in creating responsive web designs that adapt to various screen sizes and devices. Experienced in ensuring cross-browser compatibility and adherence to web standards for consistent user experiences across different platforms and browsers",
+      link: "https://amazon.com",
+    },
+    {
+      title: "Version Control",
+      description:
+        "Proficient in version control systems like Git, GitHub, and Bitbucket for collaborative development and code management. Skilled in branching, merging, and resolving conflicts to maintain codebase integrity and facilitate team collaboration.",
+      link: "https://microsoft.com",
+    },
+    {
+      title: "Deployment and DevOps",
+      description:
+        "Familiarity with deployment pipelines and DevOps practices using tools like Docker, AWS, and Heroku. Experienced in containerization, continuous integration, and automated deployment processes to streamline application delivery and maintenance.",
+      link: "https://meta.com",
+    },
+    {
+      title: "Agile Methodologies and Project Management",
+      description:
+        "Knowledgeable in Agile methodologies like Scrum and Kanban for iterative development and project management. Skilled in sprint planning, backlog grooming, and sprint retrospectives to foster collaboration and deliver high-quality software products on time",
+      link: "https://amazon.com",
+    },
+    {
+      title: "Flutter Development",
+      description:
+        "Proficient in Flutter framework for building cross-platform mobile applications with native-like performance and user experience. Skilled in widget-based UI development, state management, and platform-specific integrations.",
+      link: "https://microsoft.com",
+    },
+  ];
+
   return (
     <div className="w-full h-full relative flex flex-col items-center">
       <div className="mt-10">
@@ -127,59 +184,4 @@ const Page: React.FC = () => {
 
 export default Page;
 
-export const Skills = [
-  {
-    title: "Frontend Development",
-    description:
-      "Mastery in building dynamic user interfaces and interactive web applications using modern frontend frameworks like React, Nextjs. Nodejs Proficient in creating reusable components, managing state, and optimizing performance.",
-    link: "https://stripe.com",
-  },
-  {
-    title: "Backend Development ",
-    description:
-      "Extensive experience in backend development using Node.js, Express, and Prisma frameworks. Skilled in building scalable, RESTful APIs, handling authentication, authorization, and data management with databases like MongoDB, PostgreSQL, and MySQL.",
-    link: "https://netflix.com",
-  },
-  {
-    title: "Database Management",
-    description:
-      "Strong understanding of database management systems including MongoDB, PostgreSQL, and MySQL. Proficient in designing schemas, optimizing queries, and ensuring data integrity for efficient data storage and retrieval.",
-    link: "https://google.com",
-  },
-  {
-    title: "RESTful API Development",
-    description:
-      "Expertise in designing and implementing RESTful APIs for seamless communication between frontend and backend systems. Skilled in defining endpoints, request handling, authentication mechanisms, and data validation to ensure secure and efficient data transfer.",
-    link: "https://meta.com",
-  },
-  {
-    title: "Responsive Design and Cross-Browser Compatibility",
-    description:
-      "Proficient in creating responsive web designs that adapt to various screen sizes and devices. Experienced in ensuring cross-browser compatibility and adherence to web standards for consistent user experiences across different platforms and browsers",
-    link: "https://amazon.com",
-  },
-  {
-    title: "Version Control",
-    description:
-      "Proficient in version control systems like Git, GitHub, and Bitbucket for collaborative development and code management. Skilled in branching, merging, and resolving conflicts to maintain codebase integrity and facilitate team collaboration.",
-    link: "https://microsoft.com",
-  },
-  {
-    title: "Deployment and DevOps",
-    description:
-      "Familiarity with deployment pipelines and DevOps practices using tools like Docker, AWS, and Heroku. Experienced in containerization, continuous integration, and automated deployment processes to streamline application delivery and maintenance.",
-    link: "https://meta.com",
-  },
-  {
-    title: "Agile Methodologies and Project Management",
-    description:
-      "Knowledgeable in Agile methodologies like Scrum and Kanban for iterative development and project management. Skilled in sprint planning, backlog grooming, and sprint retrospectives to foster collaboration and deliver high-quality software products on time",
-    link: "https://amazon.com",
-  },
-  {
-    title: "Flutter Development",
-    description:
-      "Proficient in Flutter framework for building cross-platform mobile applications with native-like performance and user experience. Skilled in widget-based UI development, state management, and platform-specific integrations.",
-    link: "https://microsoft.com",
-  },
-];
+ 

@@ -26,7 +26,7 @@ export default function Home() {
   // }, []);
 
   return (
-    <div className="bg-black min-h-screen overflow-y-scroll">
+    <div className="bg-black min-h-screen w-[100%] overflow-clip">
       <Intro />
       <AboutMe />
       

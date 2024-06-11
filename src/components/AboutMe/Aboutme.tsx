@@ -13,7 +13,7 @@ import Cloud from "../Cloud/Cloud";
 
 const AboutMe = () => {
   return (
-    <div className="bg-slate-950">
+    <div className="bg-slate-950 w-[100%]">
       <div className="flex flex-col">
         <LampContainer className="">
           <motion.h1
@@ -33,7 +33,7 @@ const AboutMe = () => {
           <div>
             {" "}
             <CardContainer className="inter-var ">
-              <CardBody className="  relative group/card  hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]   sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="  relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]    h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="100"
                   className="text-[32px] items-center font-bold text-white"
@@ -77,7 +77,7 @@ const AboutMe = () => {
                   <CardItem
                     translateZ={50}
                     as={Link}
-                    href="/Aboutme"
+                    href="/aboutme"
                     target="__blank"
                     className="px-4  rounded-xl text-xs font-normal dark:text-white"
                   >

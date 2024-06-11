@@ -86,7 +86,7 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        " w-full hello bg-gradient-to-tr from-zinc-800 to-neutral-900 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "  hello bg-gradient-to-tr from-zinc-800 to-neutral-900 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >

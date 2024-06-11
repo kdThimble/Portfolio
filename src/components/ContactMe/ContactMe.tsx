@@ -5,6 +5,7 @@ import TrackVisibility from "react-on-screen";
 import ToolTips from "../ToolTips";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import { SparklesCore } from "../ui/sparkles";
+import Link from "next/link";
 
 const ContactForm = () => {
   const initialState = { name: "", email: "", subject: "", message: "" };
@@ -66,7 +67,7 @@ const ContactForm = () => {
           "Let's Connect and Create Something Amazing Together!"
         </p>
         <TypewriterEffect words={words} />
-        <p className="text-neutral-600 dark:text-neutral-200 text-base  mt-10">
+        <p className="text-white dark:text-neutral-200 text-base  mt-10">
           Email :{" "}
           <a
             href={`mailto:kundanrajpurohit221@gmail.com`}
@@ -76,9 +77,11 @@ const ContactForm = () => {
           </a>{" "}
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
-          <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+          <Link href="/contact">
+          <button className="w-40 h-10 rounded-xl bg-black border border-white border-transparent text-white text-sm">
             Contact me
-          </button>
+            </button>
+            </Link>
         </div>
       </div>
     </div>

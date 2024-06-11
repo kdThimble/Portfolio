@@ -5,9 +5,10 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: #ab91c4;
+    width: 300px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .tagcloud {
         font-size: 16px;
     }

@@ -25,7 +25,7 @@ const ContactPage: React.FC = () => {
     <div className="w-full h-full bg-neutral-950 ">
       <div className="h-[30rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
         <div className="max-w-2xl mx-auto p-4">
-          <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+          <h1 className="relative z-10 text-4xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
             Connect with Me
           </h1>
           <p></p>
@@ -39,9 +39,9 @@ const ContactPage: React.FC = () => {
       </div>
 
       <div className="flex flex-wrap ">
-        <div className="w-[50%] flex flex-col">
+        <div className="md:w-[50%] w-full flex flex-col">
           <div className="h-[10rem] flex justify-center items-center m-5 md:m-0 px-4">
-            <div className="text-4xl mx-auto font-normal  text-neutral-400">
+            <div className="text-3xl md:text-4xl mx-auto font-normal  text-neutral-400">
               Build
               <FlipWords words={words} /> <br />
               websites with Kundan
@@ -75,7 +75,7 @@ const ContactPage: React.FC = () => {
             <div className="mt-[3rem]"></div>
           </div>
         </div>
-        <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+        <div className="max-w-md w-full md:mx-auto mx-3 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
           <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
             Connect with me
           </h2>

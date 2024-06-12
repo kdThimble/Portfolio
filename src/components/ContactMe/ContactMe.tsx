@@ -63,7 +63,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center h-[40rem] mt-[-7rem] ">
-        <p className="text-neutral-600 dark:text-neutral-200 text-base  mb-10">
+        <p className="text-neutral-600 dark:text-neutral-200 text-base ml-5 text-center md:ml-0  mb-10">
           "Let's Connect and Create Something Amazing Together!"
         </p>
         <TypewriterEffect words={words} />
@@ -78,10 +78,10 @@ const ContactForm = () => {
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
           <Link href="/contact">
-          <button className="w-40 h-10 rounded-xl bg-black border border-white border-transparent text-white text-sm">
-            Contact me
+            <button className="w-40 h-10 rounded-xl bg-black border border-white border-transparent text-white text-sm">
+              Contact me
             </button>
-            </Link>
+          </Link>
         </div>
       </div>
     </div>

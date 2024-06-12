@@ -38,7 +38,7 @@ const Cloud = () => {
       const sphereElement = document.querySelector(".Sphere");
       if (sphereElement) {
         TagCloud([sphereElement], Texts, {
-          radius: 250,
+          radius: 230,
           maxSpeed: "normal",
           initSpeed: "fast",
           deceleration: 135,
@@ -55,7 +55,7 @@ const Cloud = () => {
 
   return (
     <div >
-      <div className="Sphere md:flex justify-center d-none sm:block"></div>
+      <div className="Sphere md:flex  justify-center d-none sm:block"></div>
     </div>
   );
 };

@@ -64,12 +64,12 @@ const Page: React.FC = () => {
     <div className="w-full h-full relative flex flex-col items-center">
       <div className="mt-10">
         <img
-          className="w-full h-full "
+          className="w-full h-full  "
           src={"/assets/Background.png"}
           alt="Mountains front"
           id="mountains_front"
         />
-        <div className="absolute top-[12rem] left-[13rem]">
+        <div className="absolute md:top-[12rem] md:left-[13rem] left-[4rem]">
           <span className=" font-san font-thin text-[3rem]">This is your</span>
           <br />
           <span className=" font-san font-thin text-[3rem]">Developer</span>
@@ -78,7 +78,7 @@ const Page: React.FC = () => {
             Kundan Rajpurohit
           </span>
           <br />
-          <div className="text-wrap w-[40%] mt-7">
+          <div className="text-wrap md:w-[40%] w-full mt-7">
             <span className=" font-inter text-gray-400 font-thin text-sm">
               Experienced Full Stack Developer proficient in frontend and
               backend technologies. Passionate about crafting innovative
@@ -90,7 +90,7 @@ const Page: React.FC = () => {
         </div>
       </div>
       <div>
-        <div className="mt-[5rem]">
+        <div className="md:mt-[5rem] mt-[36rem]">
           <div className="flex justify-center items-center">
             <span className="text-[#757272]">SPECIALITY</span>
             <br />
@@ -137,11 +137,11 @@ const Page: React.FC = () => {
           </div>
         </div>
       </div>
-      <Meteors number={20} />
-      <div className="mt-10 flex gap-[12rem] justify-center  w-full mb-[10rem]">
-        <div className=" w-full relative max-w-xs">
-          <div className="absolute inset-5 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-          <div className="relative shadow-xl  w-[25rem] bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+      <Meteors number={20} className="hidden md:block" />
+      <div className="mt-10 flex  flex-wrap md:gap-[12rem] gap-10 justify-center  w-full mb-[10rem]">
+        <div className=" w-full relative max-w-xs ">
+          <div className="absolute md:inset-5 inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+          <div className="relative shadow-xl  md:w-[25rem] w-[20rem] bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
             <div className=" ">
               <h1 className="font-bold text-xl text-white mb-4 relative z-50">
                 Full Stack Development
@@ -158,9 +158,9 @@ const Page: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full relative max-w-xs ">
-          <div className="absolute inset-5 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-          <div className="relative shadow-xl  w-[25rem] bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+        <div className=" md:w-full relative max-w-xs w-[100%] ">
+          <div className="absolute md:inset-5 inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+          <div className="relative shadow-xl  md:w-[25rem] w-[20rem] bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
             <div className=" ">
               <h1 className="font-bold text-xl text-white mb-4 relative z-50">
                 App Devlopment
@@ -183,5 +183,3 @@ const Page: React.FC = () => {
 };
 
 export default Page;
-
- 

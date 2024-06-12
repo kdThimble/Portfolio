@@ -15,7 +15,7 @@ const AboutMe = () => {
   return (
     <div className="bg-slate-950 w-[100%]">
       <div className="flex flex-col">
-        <LampContainer className="">
+        <LampContainer className="md:px-0 px-4">
           <motion.h1
             initial={{ opacity: 0.5, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -24,16 +24,16 @@ const AboutMe = () => {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+            className="md:mt-8 mt-0 bg-gradient-to-br from-slate-300 px-2 md:px-0 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl "
           >
             About Me <br />
           </motion.h1>
         </LampContainer>
-        <div className="flex justify-between px-[50px] mt-[-13rem]">
+        <div className="flex flex-wrap justify-between items-center md:px-[50px] mt-[-13rem]">
           <div>
             {" "}
             <CardContainer className="inter-var ">
-              <CardBody className="  relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]    h-auto rounded-xl p-6 border  ">
+              <CardBody className="  relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]    h-auto rounded-xl md:p-6 p-4 border w-[20rem] md:w-full ">
                 <CardItem
                   translateZ="100"
                   className="text-[32px] items-center font-bold text-white"
@@ -53,7 +53,7 @@ const AboutMe = () => {
                 <CardItem
                   as="div"
                   translateZ="80"
-                  className="w-full mt-4 flex flex-row"
+                  className="w-full mt-2 flex flex-row"
                 >
                   <CardItem
                     as="div"
@@ -67,13 +67,13 @@ const AboutMe = () => {
                   </CardItem>
                   <Image
                     src="/assets/profilebnw.png"
-                    height="130"
+                    height="200"
                     width="200"
-                    className="h-[180px]  object-cover rounded-xl group-hover/card:shadow-xl"
+                    className="h-[200px] hidden md:block  object-cover rounded-xl group-hover/card:shadow-xl"
                     alt="thumbnail"
                   />
                 </CardItem>
-                <div className="flex justify-between items-center ">
+                <div className="flex justify-between items-center mt-5 md:mt-0">
                   <CardItem
                     translateZ={50}
                     as={Link}
